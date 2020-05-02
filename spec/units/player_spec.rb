@@ -12,9 +12,9 @@ describe Player do
     expect(ed.hp).to eq described_class::Base_Health
   end
 
-  it 'reduces player 2s hit points' do
-    expect { andrew.attack(ed) }.to change { ed.hp }.by(-10)
-  end
+  # it 'reduces player 2s hit points' do
+  #   expect { andrew.attack(ed) }.to change { ed.hp }.by(-10)
+  # end
 
   it 'responds to receive_damage' do
     expect(andrew).to respond_to(:receive_damage)
